@@ -1,38 +1,95 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quadriaticFormula {
+  padding: 2px;
+  font-size: 2.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  background-color: rgb(209, 196, 180);
+  width: 38px;
+  font-size: 1.7rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.binomialsForm {
+  font-size: 2rem;
+}
+.squareContainer {
+  display: grid;
+  padding: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.App-link {
-  color: #61dafb;
+.square {
+  border: 5px solid black;
+  height: 100px;
+  padding-top: 20px;
+  margin:2px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color:rgb(199, 230, 219);
+  font-size: 2rem;
+  animation: slow 6s ease forwards;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display {
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+}
+
+.topX {
+  padding-top: 60px;
+  grid-column-start: 2;
+  color: red;
+}
+
+.bottomX {
+  padding-top: 40px;
+  grid-column-start: 1;
+  text-align: right;
+  color: rgb(0, 17, 255);
+}
+
+.topNumber {
+  padding-top: 60px;
+  grid-column-start: 3;
+  color: red;
+  transition-timing-function: ease-in;
+}
+
+.bottomNumber {
+  padding-top: 40px;
+  grid-row-start: 3;
+  text-align: right;
+  color: rgb(0, 17, 255);
+  
+}
+
+
+.squareTL {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+.squareTR {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
+
+}
+.squareBL {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+.squareBR {
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+
 }
