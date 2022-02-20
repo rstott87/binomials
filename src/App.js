@@ -20,6 +20,19 @@ function App() {
   console.log(number);
   return (
     <div className="App">
+          <div className='quadriaticFormula'>
+        x<sup>2</sup> {`+ ${Number.isNaN(parseInt(number.first)+parseInt(number.second)) ? ' ' : parseInt(number.first)+parseInt(number.second)}x + ${number.first*number.second}`} 
+      </div>
+      <div className="squareContainer">
+        <div className="topX display"> X</div>
+        <div className="topNumber display">{number.first > 0 ? `+${number.first}` : number.first}</div>
+        <div className="bottomX display">X</div>
+        <div className="bottomNumber display">{number.second > 0 ? `+${number.second}` : number.second}</div>
+        <div className="squareTL square"> X <sup>2</sup> </div>
+        <div className="squareTR square"> {`${number.first}X`}</div>
+        <div className="squareBL square"> {`${number.second}X`}</div>
+        <div className="squareBR square"> {number.first*number.second}</div>
+      </div>
       <h1>Binomials</h1>
       <div>
         <form className='binomialsForm'>
@@ -44,19 +57,6 @@ function App() {
             )
           </label>
         </form>
-      </div>
-      <div className="squareContainer">
-        <div className="topX display"> X</div>
-        <div className="topNumber display">{number.first > 0 ? `+${number.first}` : number.first}</div>
-        <div className="bottomX display">X</div>
-        <div className="bottomNumber display">{number.second > 0 ? `+${number.second}` : number.second}</div>
-        <div className="squareTL square"> X <sup>2</sup> </div>
-        <div className="squareTR square"> {`${number.first}X`}</div>
-        <div className="squareBL square"> {`${number.second}X`}</div>
-        <div className="squareBR square"> {number.first*number.second}</div>
-      </div>
-      <div className='quadriaticFormula'>
-        x<sup>2</sup> {`+ ${Number.isNaN(parseInt(number.first)+parseInt(number.second)) ? ' ' : parseInt(number.first)+parseInt(number.second)}x + ${number.first*number.second}`} 
       </div>
     </div>
   );

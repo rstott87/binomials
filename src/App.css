@@ -1,37 +1,51 @@
+
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  padding-bottom: 200px;
 }
 .quadriaticFormula {
-  padding: 2px;
+  margin-top: 50px;
   font-size: 2.4rem;
+  color: white;
+}
+
+h1{
+  color: white;
 }
 
 input {
-  background-color: rgb(209, 196, 180);
-  width: 38px;
+  background-color: #60bfda;
+  width: 55px;
   font-size: 1.7rem;
 }
 
 .binomialsForm {
+  color: azure;
   font-size: 2rem;
 }
 .squareContainer {
   display: grid;
-  padding: 25px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 6fr 6fr;
+  grid-template-rows: 2fr 3fr 3fr;
+  grid-gap: 4px;
+  margin-right: 40px;
 }
 
 .square {
-  border: 5px solid black;
-  height: 100px;
+  border: 3px solid rgb(132, 0, 255);
+  min-width: 145px;
+  max-width: 200px;
   padding-top: 20px;
-  margin:2px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color:rgb(199, 230, 219);
+  background-color: #60bfda;
   font-size: 2rem;
-  animation: slow 6s ease forwards;
 }
 
 .display {
@@ -43,20 +57,20 @@ input {
 .topX {
   padding-top: 60px;
   grid-column-start: 2;
-  color: red;
+  color: rgb(255, 255, 255)
 }
 
 .bottomX {
   padding-top: 40px;
   grid-column-start: 1;
   text-align: right;
-  color: rgb(0, 17, 255);
+  color: rgb(255, 255, 255);
 }
 
 .topNumber {
   padding-top: 60px;
   grid-column-start: 3;
-  color: red;
+  color: rgb(255, 255, 255);
   transition-timing-function: ease-in;
 }
 
@@ -64,7 +78,7 @@ input {
   padding-top: 40px;
   grid-row-start: 3;
   text-align: right;
-  color: rgb(0, 17, 255);
+  color: rgb(255, 255, 255)
   
 }
 
